@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImdbMini.Contracts", "ImdbMini.Contracts\ImdbMini.Contracts.csproj", "{3DC6342E-55DC-4F8C-9A8F-E3F92379F7F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImdbMini.DataLoad", "ImdbMini.DataLoad\ImdbMini.DataLoad.csproj", "{5AB4FF91-9CE0-464B-959E-486912554473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImdbMini.WebApp.Core", "ImdbMini.WebApp.Core\ImdbMini.WebApp.Core.csproj", "{E9F072B3-7282-438D-971E-8BD5FF2EC8DB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{04F5AA48-40E3-4742-9075-1C198732469E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC6342E-55DC-4F8C-9A8F-E3F92379F7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC6342E-55DC-4F8C-9A8F-E3F92379F7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC6342E-55DC-4F8C-9A8F-E3F92379F7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC6342E-55DC-4F8C-9A8F-E3F92379F7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB4FF91-9CE0-464B-959E-486912554473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB4FF91-9CE0-464B-959E-486912554473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB4FF91-9CE0-464B-959E-486912554473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB4FF91-9CE0-464B-959E-486912554473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F072B3-7282-438D-971E-8BD5FF2EC8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F072B3-7282-438D-971E-8BD5FF2EC8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F072B3-7282-438D-971E-8BD5FF2EC8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F072B3-7282-438D-971E-8BD5FF2EC8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F5AA48-40E3-4742-9075-1C198732469E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F5AA48-40E3-4742-9075-1C198732469E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F5AA48-40E3-4742-9075-1C198732469E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F5AA48-40E3-4742-9075-1C198732469E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDB1F02F-31DE-413C-B827-6800D02279CF}
+	EndGlobalSection
+EndGlobal
