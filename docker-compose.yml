@@ -1,8 +1,27 @@
 version: '3'
 
 services:
+  imdbmongo:
+    image: mongo
+    networks:
+    - imdb
+    ports:
+      - "27017:27017"
+    volumes:
+    - imdbdata:/data/db
+
   imdbmini.webapp.core:
     image: imdbmini.webapp.core
+    networks:
+    - imdb
     build:
       context: ./ImdbMini.WebApp.Core
       dockerfile: Dockerfile
+    depends_on:
+    - imdbmongo
+
+networks:
+  imdb:
+
+volumes:
+  imdbdata:
