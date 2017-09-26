@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using ImdbMini.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
 namespace ImdbMini.WebApp.Core.Controllers
@@ -12,9 +14,10 @@ namespace ImdbMini.WebApp.Core.Controllers
     {
         private readonly IMongoCollection<Movie> _collection;
 
-        public MoviesController()
+        public MoviesController(IConfiguration configuration)
         {
-            var client = new MongoClient("mongodb://172.17.0.2");
+            var conStr = configuration.GetValue<string>("DB_CON_STR");
+            var client = new MongoClient(conStr);
             var database = client.GetDatabase("Imdb");
             _collection = database.GetCollection<Movie>("Movies");
         }

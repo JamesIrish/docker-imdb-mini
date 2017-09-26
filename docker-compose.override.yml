@@ -4,5 +4,6 @@ services:
   imdbmini.webapp.core:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - DB_CON_STR=mongodb://imdbmongo
     ports:
       - "80"

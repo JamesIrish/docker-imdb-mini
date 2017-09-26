@@ -29,7 +29,7 @@ namespace ImdbMini.DataLoad
             collection.DeleteMany(FilterDefinition<Movie>.Empty);
 
             // Open the CSV
-            using (var stream = new FileStream(@"E:\Downloads\movie_metadata.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (var stream = new FileStream("movie_metadata.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
                 var csvFactory = new CsvHelper.CsvFactory();
